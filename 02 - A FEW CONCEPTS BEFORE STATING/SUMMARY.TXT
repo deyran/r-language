@@ -1,0 +1,25 @@
+02 - A FEW CONCEPTS BEFORE STATING
+    This chapter will be decribed:
+        1 - The "assign" operator.
+        2 - How to manage objects in memory.
+        3 - How to use the on-line help
+
+0201 - HOW R WORKS
+    >> R is an interpreted language, not a compiled on, meaning that all commands typed on the keyboard are directly executated  [...]
+    >> In R, a function ALWAYS needs to be written with parentheses, even if there's nothing within them. If you type a function without parentheses, R will display the content of the function.
+    >>>> In R prompt type "write" without parentheses, the return will be: 
+        
+        > write
+        function (x, file = "data", ncolumns = if (is.character(x)) 1 else 5, 
+            append = FALSE, sep = " ") 
+        cat(x, file = file, sep = c(rep.int(sep, ncolumns - 1), "\n"), 
+            append = append)
+        <bytecode: 0x0000024f787b3a20>
+        <environment: namespace:base>    
+
+0202 - CREATING, LISTING AND DELETING THE OBJECTS IN MEMORY
+0203 - THE ON-LINE HELP
+---------------------------------------------------------------
+
+02 - A FEW CONCEPTS BEFORE STATING
+0201 - HOW R WORKS
