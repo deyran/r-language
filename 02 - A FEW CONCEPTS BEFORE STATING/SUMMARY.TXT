@@ -5,17 +5,21 @@
         3 - How to use the on-line help
 
 0201 - HOW R WORKS
-    >> R is an interpreted language, not a compiled on, meaning that all commands typed on the keyboard are directly executated  [...]
+    >> R is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executated  [...]
     >> In R, a function ALWAYS needs to be written with parentheses, even if there's nothing within them. If you type a function without parentheses, R will display the content of the function.
-    >>>> In R prompt type "write" without parentheses, the return will be: 
+    >>>> In R prompt type "write" function without parentheses, the return will be: 
         
+        ...
         > write
         function (x, file = "data", ncolumns = if (is.character(x)) 1 else 5, 
             append = FALSE, sep = " ") 
         cat(x, file = file, sep = c(rep.int(sep, ncolumns - 1), "\n"), 
             append = append)
         <bytecode: 0x0000024f787b3a20>
-        <environment: namespace:base>    
+        <environment: namespace:base>
+        ...
+        
+    >> When R is running, variables, data, functions, results, etc, are stored in the active memory of the computer in the form objects which have a name. The user can do actions on these objects with operators (arithmetic, logical comparisons, ...) and functions (which are themselves objects)
 
 0202 - CREATING, LISTING AND DELETING THE OBJECTS IN MEMORY
 0203 - THE ON-LINE HELP
