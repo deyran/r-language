@@ -72,3 +72,21 @@ M2 = matrix(data=V2, nrow=2, ncol=2, byrow=TRUE)
 
 M1_M2_ADDITION = M1 + M2
 print(M1_M2_ADDITION)
+--------------------------------------------------------
+
+=> SCALAR MULTIPLICATION---------------------------------------------------
+
+	2 *|2 5| = |2*2 2*5|
+	   |3 6|   |2*3 2*6|
+
+multiplication by scalar using R language
+
+V = c(2, 5, 3, 6)
+
+M = matrix(data=V, nrow=2, ncol=2, byrow=TRUE)
+
+print(M)
+
+M_SCALAR = 2*M
+print(M_SCALAR)
+--------------------------------------------------------
