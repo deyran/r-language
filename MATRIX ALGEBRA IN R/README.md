@@ -57,3 +57,18 @@ In matrix(data = V, nrow = 4) :
      [,1] [,2] [,3]
 [1,]   12   34   56
 [2,]   23   45   67
+--------------------------------------------------------
+
+=> MATRIX ADDITION---------------------------------------------------------
+M1 = 	|2 5|	M2 =	|5 8|
+    	|3 6|	    	|3 2|
+
+To add the matrix in R language you can use the example below
+V1 = c(2, 5, 3, 6)
+V2 = c(5, 8, 3, 2)
+
+M1 = matrix(data=V1, nrow=2, ncol=2, byrow=TRUE)
+M2 = matrix(data=V2, nrow=2, ncol=2, byrow=TRUE)
+
+M1_M2_ADDITION = M1 + M2
+print(M1_M2_ADDITION)
