@@ -28,9 +28,9 @@ print(M)
 [3,]    7    8    9
 
 Working with data
- V = c(12, 23, 34, 45, 56, 67)
-> M = matrix(data = V)
-> print(M)
+V = c(12, 23, 34, 45, 56, 67)
+M = matrix(data = V)
+print(M)
      [,1]
 [1,]   12
 [2,]   23
@@ -40,20 +40,21 @@ Working with data
 [6,]   67
 --------------------------------------------------------
 
-> M = matrix(data = V, nrow=3)
-> print(M)
+M = matrix(data = V, nrow=3)
+print(M)
      [,1] [,2]
 [1,]   12   45
 [2,]   23   56
 [3,]   34   67
 --------------------------------------------------------
 
-> M = matrix(data = V, nrow=4)
+ M = matrix(data = V, nrow=4)
 Warning message:
 In matrix(data = V, nrow = 4) :
   data length [6] is not a sub-multiple or multiple of the number of rows [4]
-> M = matrix(data = V, nrow=2)
-> print(M)
+  
+M = matrix(data = V, nrow=2)
+print(M)
      [,1] [,2] [,3]
 [1,]   12   34   56
 [2,]   23   45   67
