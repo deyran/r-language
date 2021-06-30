@@ -21,9 +21,30 @@
         
     >> When R is running, variables, data, functions, results, etc, are stored in the active memory of the computer in the form objects which have a name. The user can do actions on these objects with operators (arithmetic, logical comparisons, ...) and functions (which are themselves objects)
 
-0202 - CREATING, LISTING AND DELETING THE OBJECTS IN MEMORY
+0202 - CREATING, LISTING AND DELETING THE OBJECTS IN MEMORY -> 5
+    >> The object can be created using assign operator "<-", as seen in the example below:
+        > R <- 10 
+        > R
+          [1] 10
+
+    >> The assign operator can be used left to right (->):
+        > 50 -> D
+        > D
+          [1] 50
+
+    >> The objects are sensitive case:
+        > x <- 3
+        > X <- 4
+        > x
+          [1] 3
+        > X
+          [1] 4
+
+     
+
+
 0203 - THE ON-LINE HELP
 ---------------------------------------------------------------
 
 02 - A FEW CONCEPTS BEFORE STATING
-0201 - HOW R WORKS
+0202 - CREATING, LISTING AND DELETING THE OBJECTS IN MEMORY -> 5
