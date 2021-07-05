@@ -25,22 +25,38 @@
     >> The object can be created using assign operator "<-", as seen in the example below:
         > R <- 10 
         > R
-          [1] 10
+        [1] 10
 
     >> The assign operator can be used left to right (->):
         > 50 -> D
         > D
-          [1] 50
+        [1] 50
 
-    >> The objects are sensitive case:
+    >> Object names are sensitive case:
         > x <- 3
         > X <- 4
         > x
-          [1] 3
+        [1] 3
         > X
-          [1] 4
+        [1] 4
 
-     
+    >> When you type expressions without assigning them in an object, the result is shown in the prompt in the next line:
+        > (10 * 25) / 71
+        [1] 3.521127
+
+    >> If you want to see the names of the objects that were used, you just need to run the ls() command:
+        > Name <- "Deyvid Rannyere"; Daughter <- "Lara Hellena"; Wife <- "Marcia Moraes"
+        > ls()
+        [1] "Name"  "Daughter"  "Wife"
+
+    >> With the ls(pat="x") you can list the objects which contains a specific character:
+        > ls(pat ="D")
+        [1] "D"        "Daughter"    
+
+    >> If you are looking for a list of object that start with specific character, you have to add ^ in the ls(pat="x") command:
+        > ls(pat="^W")
+        [1] "Wife"
+
 
 
 0203 - THE ON-LINE HELP
